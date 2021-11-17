@@ -1,0 +1,12 @@
+$silver: #737373;
+$white: #ffffff;
+$black: #252B42;
+$orange: #FFA62B;
+$blue: #1ABCFE;
+
+@mixin clamp($row) {
+  -webkit-line-clamp: $row;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

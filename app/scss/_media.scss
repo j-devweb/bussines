@@ -1,0 +1,170 @@
+@media (max-width: 1200px) {
+  .header {
+    &__info {
+      justify-content: center;
+    }
+
+    &__info-item:not(:last-child) {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .direction {
+
+    &__inner {
+      justify-content: center;
+    }
+  }
+
+  .service {
+    &__inner {
+      justify-content: center;
+    }
+
+    &__video {
+      margin: 0 20px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__inner {
+      height: 100%;
+    }
+
+    &__info {
+      flex-wrap: wrap;
+    }
+
+    &__button {
+      margin-bottom: 20px;
+    }
+  }
+  .choose {
+    &__items {
+      justify-content: center;
+    }
+  }
+
+  .advantages {
+    &__list {
+      justify-content: center;
+    }
+  }
+
+  .connect {
+    &__list {
+      flex-wrap: wrap;
+      margin: 0 20px;
+    }
+
+    &__item {
+      max-width: 230px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__info {
+      flex-wrap: wrap;
+    }
+
+    &__info-item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .burger {
+    display: block;
+    z-index: 18;
+  }
+
+  //  Меню
+  
+  .menu {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    transform: translateY(-200%);
+    background-color: #fff;
+    transition: 0.5s;
+    z-index: 15;
+
+    &.active {
+      transform: translateY(0);
+    }
+
+    &__item {
+    margin-bottom: 30px;
+    }
+
+    &__item:not(:last-child) {
+     margin-right: 0;
+    }
+
+    &__list {
+      display: block;
+      padding: 80px 0;
+      transition: 0.5s;
+    }
+
+    &__link {
+      padding: 10px;
+      display: block;
+      text-align: center;
+      color: $black;
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  .header {
+    &__title {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+     text-align: center;
+    }
+
+    &__button {
+     text-align: center;
+    }
+  }
+
+  .footer {
+    &__inner {
+      justify-content: center;
+    }
+
+    &__menu {
+      margin-bottom: 20px;
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
